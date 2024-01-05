@@ -1,14 +1,13 @@
-#include "sys/system_info.h"
+#include "sys/sys_info.h"
 #include "ram/ram_info.h"
 #include "cpu/cpu_info.h"
+#include "rom/rom_info.h"
 
 int main() {
-    struct utsname system_info;
-    struct sysinfo mem_info;
-
-    print_system_info(&system_info);
-    print_ram_info(&mem_info);
+    print_sys_info();
     print_cpu_info();
+    print_ram_info();
+    print_rom_info();
 
     return 0;
 }
