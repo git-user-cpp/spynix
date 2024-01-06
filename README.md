@@ -1,6 +1,8 @@
 # spynix
 unix system & hardware info scraper
 
+---
+
     Copyright 2024 Andrew Kushyk
 
       Licensed under the Apache License, Version 2.0 (the "License");
@@ -8,6 +10,8 @@ unix system & hardware info scraper
       You may obtain a copy of the License at
         
         http://www.apache.org/licenses/LICENSE-2.0
+
+---
 
 | Downloads | Stars |
 |---|---|
@@ -24,3 +28,27 @@ unix system & hardware info scraper
 | Activity | Last commit|
 |---|---|
 | ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/git-user-cpp/spynix?color=98FB98&label=Commit%20activity&logo=GitHub&logoColor=98FB98&style=plastic) | ![GitHub last commit](https://img.shields.io/github/last-commit/git-user-cpp/spynix?color=98FB98&label=Last%20commit&logo=GitHub&logoColor=98FB98&style=plastic) |
+
+---
+
+## How to use this app
+
+1) **The program is designed for Debian, so avoid using other distributions and systems or redesign the program to avoid errors.**
+
+2) Download *all* files and put them in a one directory.
+
+3) Enter the directory.
+   ```
+   cd /path_to/spynix
+   ```
+
+4) Compile and run the program with *clang*.
+    - Compilation example
+    ```
+    clang -W -o spynix src/main.c 
+    ```
+5) Launch the app to see all available options.
+    ```
+    ./spynix --help
+    ```
+---
