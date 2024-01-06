@@ -1,5 +1,5 @@
 # spynix
-unix system info scraper
+unix system & hardware info scraper
 
     Copyright 2024 Andrew Kushyk
 
