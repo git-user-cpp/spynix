@@ -29,6 +29,8 @@ int main(int argc, char **argv) {
             print_rom_info();
         } else if(strcmp(argv[1], "-v") == 0 || strcmp(argv[1], "--version") == 0) {
             print_ver_info();
+        } else if(strcmp(argv[1], "-b") == 0 || strcmp(argv[1], "--banner") == 0) {
+            print_banner();
         } else {
             print_err_info();
         }
