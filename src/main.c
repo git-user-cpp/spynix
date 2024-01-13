@@ -4,6 +4,7 @@
 #include "cpu/cpu_info.h"
 #include "rom/rom_info.h"
 #include "hlp/hlp_info.h"
+#include "net/net_info.h"
 
 int main(int argc, char **argv) {
     if(argc == 1) {
@@ -27,6 +28,13 @@ int main(int argc, char **argv) {
             print_ram_info();
         } else if(strcmp(argv[1], "-rom") == 0) {
             print_rom_info();
+        } else if(strcmp(argv[1], "-net") == 0) {
+            char host_name[100];
+            printf("Enter a hostname: ");
+            fgets(host_name, sizeof(host_name), stdin);
+            host_name[strcspn(host_name, "\n")] = '\0';
+
+            print_net_info(host_name); 
         } else if(strcmp(argv[1], "-v") == 0 || strcmp(argv[1], "--version") == 0) {
             print_ver_info();
         } else if(strcmp(argv[1], "-b") == 0 || strcmp(argv[1], "--banner") == 0) {
