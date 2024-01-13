@@ -21,7 +21,7 @@ void print_net_info(char *hostname){
 
     struct ifaddrs *ifaddr, *ifa;
     if(getifaddrs(&ifaddr) == -1) {
-        perror("getifaddrs error");
+        perror("getifaddrs");
         exit(1);
     }
     for(ifa = ifaddr; ifa != NULL; ifa = ifa->ifa_next){
