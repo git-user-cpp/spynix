@@ -1,7 +1,7 @@
 # spynix
 ---
 
-unix system & hardware info scraper
+rapid unix system & hardware info scraper
 
 ---
     Copyright 2024 Andrew Kushyk
@@ -31,7 +31,7 @@ unix system & hardware info scraper
 | ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/git-user-cpp/spynix?color=98FB98&label=Commit%20activity&logo=GitHub&logoColor=98FB98&style=for-the-badge) | ![GitHub last commit](https://img.shields.io/github/last-commit/git-user-cpp/spynix?color=98FB98&label=Last%20commit&logo=GitHub&logoColor=98FB98&style=for-the-badge) |
 
 ---
-![Screenshot_2024-01-06_16-33-24](https://github.com/git-user-cpp/spynix/assets/61907955/c0a67eaa-2a77-4618-b9e0-1f4dcee1e717)
+![spynix](https://github.com/git-user-cpp/spynix/assets/61907955/5982b092-9622-4cf7-b1e2-109e8e7c2b68)
 ---
 
 ## How to use this app
