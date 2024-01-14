@@ -4,7 +4,7 @@
 rapid unix system & hardware info scraper
 
 ---
-![logo](https://github.com/git-user-cpp/spynix/assets/61907955/d5ff9809-d3a7-4ab0-b138-37d28a035767)
+![logo](https://github.com/git-user-cpp/spynix/assets/61907955/dcdf5731-2edb-4641-9afa-e1c30ebed833)
 ---
     Copyright 2024 Andrew Kushyk
 
