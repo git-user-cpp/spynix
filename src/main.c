@@ -39,6 +39,8 @@ int main(int argc, char **argv) {
             print_ver_info();
         } else if(strcmp(argv[1], "-b") == 0 || strcmp(argv[1], "--banner") == 0) {
             print_banner();
+        } else if(strcmp(argv[1], "-l") == 0 || strcmp(argv[1], "--logo") == 0) {
+            print_logo();
         } else {
             print_err_info();
         }

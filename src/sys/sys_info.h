@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <sys/utsname.h>
 
-void print_sys_info() {
+void print_sys_info(void) {
     struct utsname sys_info;
     uname(&sys_info);
     printf(" ____________\n");
