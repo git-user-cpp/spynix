@@ -50,7 +50,7 @@ rapid unix system & hardware info scraper
 4) Compile and run the program with *clang*.
     - Compilation example
     ```
-    clang -W -o spynix src/main.c 
+    clang -W -o spynix src/main.c -ansi -pedantic
     ```
 5) Launch the app to see all available options.
     ```
