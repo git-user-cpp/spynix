@@ -4,6 +4,8 @@
 rapid unix system & hardware info scraper
 
 ---
+![logo](https://github.com/git-user-cpp/spynix/assets/61907955/d5ff9809-d3a7-4ab0-b138-37d28a035767)
+---
     Copyright 2024 Andrew Kushyk
 
       Licensed under the Apache License, Version 2.0 (the "License");
