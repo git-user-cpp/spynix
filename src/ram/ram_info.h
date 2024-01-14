@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <sys/sysinfo.h>
 
-void print_ram_info() {
+void print_ram_info(void) {
     struct sysinfo sys_info;
     sysinfo(&sys_info);
     printf(" ____________\n");

@@ -7,19 +7,21 @@
 
 void print_net_info(char *hostname){
     struct hostent *host = gethostbyname(hostname);
+    struct ifaddrs *ifaddr, *ifa;
+    int i;
+
     if(host == NULL){
         perror("gethostbyname");
         exit(1);
     } else {
         printf("Host Name: %s\n", host->h_name);
         printf("IP Address: ");
-        for(int i = 0; host->h_addr_list[i] != NULL; i++){
+        for(i = 0; host->h_addr_list[i] != NULL; i++){
             printf("%s ", inet_ntoa(*(struct in_addr *)host->h_addr_list[i]));
         }
         printf("\n");
     }
 
-    struct ifaddrs *ifaddr, *ifa;
     if(getifaddrs(&ifaddr) == -1) {
         perror("getifaddrs");
         exit(1);

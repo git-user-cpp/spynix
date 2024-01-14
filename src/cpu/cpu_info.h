@@ -1,14 +1,15 @@
 #include <stdio.h>
-#include <dirent.h>
 
-void print_cpu_info() {
+void print_cpu_info(void) {
+    FILE *cpu_file;
+
     printf(" ____________\n");
     printf("|\n");
     printf("| CPU Info:\n");
     printf("|____________\n");
     printf("|\n");
 
-    FILE *cpu_file = fopen("/proc/cpuinfo", "r");
+    cpu_file = fopen("/proc/cpuinfo", "r");
     if (cpu_file) {
         char line[128];
         int lines = 0;
@@ -23,14 +24,16 @@ void print_cpu_info() {
     }
 }
 
-void print_full_cpu_info() {
+void print_full_cpu_info(void) {
+    FILE *cpu_file;
+
     printf(" ____________\n");
     printf("|\n");
     printf("| Full CPU Info:\n");
     printf("|____________\n");
     printf("|\n");
 
-    FILE *cpu_file = fopen("/proc/cpuinfo", "r");
+    cpu_file = fopen("/proc/cpuinfo", "r");
     if (cpu_file) {
         char line[128];
         while (fgets(line, sizeof(line), cpu_file)) {
