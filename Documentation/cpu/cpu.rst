@@ -1,48 +1,33 @@
-.. _cpu_info_functions:
+.. _cpu_information_functions:
 
 CPU Information Functions
 -------------------------
 
-This module provides functions for retrieving and displaying CPU information on Linux systems.
-
-Functions
-^^^^^^^^^
+This module contains functions for printing CPU information.
 
 .. code-block:: c
 
    void print_cpu_info(void)
 
-Prints a summary of CPU information to the console.
-
-   .. note::
-       This function displays a maximum of 19 lines of information.
-
-       Returns:
-           None
-
--------
+Prints a formatted summary of the first 19 lines of CPU information from the /proc/cpuinfo file.
 
 .. code-block:: c
 
    void print_full_cpu_info(void)
 
-Prints the complete CPU information to the console.
+Prints the complete contents of the /proc/cpuinfo file.
 
-   .. note::
-      Returns:
-         None
+Common Steps:
 
--------
+    1) Prints a formatted header for the CPU information.
+    2) Attempts to open the /proc/cpuinfo file for reading.
+    3) If the file is opened successfully:
+      - Reads lines from the file and prints them within the formatted output.
+      - Closes the file.
+    4) If the file cannot be opened, prints an error message.
+    5) Prints a closing footer for the CPU information.
 
-Example
--------
+Differences:
 
-.. code-block:: c
-
-   #include "cpu/cpu_info.h"
-
-   int main() {
-       print_cpu_info();
-       // print_full_cpu_info();  // Uncomment to print full information
-       return 0;
-   }
+    - print_cpu_info prints only the first 19 lines of the file.
+    - print_full_cpu_info prints the entire contents of the file.
