@@ -88,5 +88,5 @@ void print_hlp_info(void) {
 
 void print_ver_info(void) {
     print_banner();
-    printf("spynix v3.0.0\n\nFor more info visit: https://github.com/git-user-cpp/spynix\n");
+    printf("spynix v4.0.0\n\nFor more info visit: https://github.com/git-user-cpp/spynix\n");
 }
