@@ -10,7 +10,8 @@
 
 #include "hlp_info.h" 
 
-void print_banner(void){
+void print_banner(void)
+{
     printf("\n \
      ____                    _\n \
     / ___| _ __  _   _ _ __ (_)_  __\n \
@@ -20,7 +21,8 @@ void print_banner(void){
           |_|    |___/\n\n");
 }
 
-void print_logo(void) {
+void print_logo(void)
+{
 printf("MMMMMMMMMMMMMMMMMMMMMMMMMMMMMWNK0OkxxdddddxkkO0KNWMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\n\
 MMMMMMMMMMMMMMMMMMMMMMMWXKOxdoc:;,,''''''''',,;:codxOKXWMMMMMMMMMMMMMMMMMMMMMMM\n\
 MMMMMMMMMMMMMMMMMMMWKOdl;,'',;:clooooddddoooollc:;''',:ldOKWMMMMMMMMMMMMMMMMMMM\n\
@@ -63,11 +65,13 @@ MMMMMMMMMMMMMMMMMMMMMMWNKOdl:,'...           ...',:ldOKNWMMMMMMMMMMMMMMMMMMMMMM\
 MMMMMMMMMMMMMMMMMMMMMMMMMMMMWNKOkdlc:::::::cldkOKNWMMMMMMMMMMMMMMMMMMMMMMMMMMMM\n");
 }
 
-void print_err_info(void) {
+void print_err_info(void)
+{
     printf("Use spynix -h or spynix --help to display all valid options\n");
 }
 
-void print_hlp_info(void) {
+void print_hlp_info(void)
+{
     print_banner();
     printf("Spynix is a commandline tool for gathering info about hardware.\n\n\
 \t\tInfo:\n\
@@ -86,7 +90,8 @@ void print_hlp_info(void) {
 \t\t-cpu -f or -cpu --full \t- show full Central Processing Unit info\n");
 }
 
-void print_ver_info(void) {
+void print_ver_info(void)
+{
     print_banner();
     printf("spynix v4.0.0\n\nFor more info visit: https://github.com/git-user-cpp/spynix\n");
 }

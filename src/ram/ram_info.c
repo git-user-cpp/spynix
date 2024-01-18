@@ -10,7 +10,8 @@
 
 #include "ram_info.h" 
 
-void print_ram_info(void) {
+void print_ram_info(void)
+{
     struct sysinfo sys_info;
     sysinfo(&sys_info);
     printf(" ____________\n");

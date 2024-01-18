@@ -10,7 +10,8 @@
 
 #include "sys_info.h"
 
-void print_sys_info(void) {
+void print_sys_info(void)
+{
     struct utsname sys_info;
     uname(&sys_info);
     printf(" ____________\n");
