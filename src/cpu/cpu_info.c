@@ -24,11 +24,11 @@ void print_cpu_info(void)
     if (cpu_file)
     {
         char line[128];
-        int lines = 0;
+        uint8_t lines = 0;
         while (fgets(line, sizeof(line), cpu_file) && lines < 19)
         {
             printf("| %s", line);
-            lines++;
+            ++lines;
         }
         fclose(cpu_file);
         printf("|____________\n\n");
