@@ -30,7 +30,7 @@ rapid unix system & hardware info scraper
 
 ## How to use this app
 
-1) **The program is designed for Debian, so avoid using other distributions and systems or redesign the program to avoid errors.**
+1) **The program is designed for Linux, so avoid using other systems or redesign the program to avoid errors.**
 
 2) Download *all* files and put them in a one directory.
 
