@@ -39,7 +39,7 @@ rapid unix system & hardware info scraper
    cd /path_to/spynix
    ```
 
-4) Compile and run the program with *clang*.
+4) Compile and run the program with *make*.
     - Compilation example
     ```
     make spynix
