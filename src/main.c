@@ -56,7 +56,7 @@ int main(int argc, char **argv)
         }
         else if(strcmp(argv[1], "-net") == 0)
         {
-            char host_name[100];
+            char host_name[30];
             printf("Enter a hostname or IP address: ");
             fgets(host_name, sizeof(host_name), stdin);
             host_name[strcspn(host_name, "\n")] = '\0';
