@@ -10,9 +10,9 @@
 
 #ifndef CPU_INFO_H_SENTRY
 #define CPU_INFO_H_SENTRY
-    #include <stdio.h>
-    #include <stdint.h>
+        #include <stdio.h>
+        #include <stdint.h>
 
-    void print_cpu_info(void);
-    void print_full_cpu_info(void);
+        void print_cpu_info(void);
+        void print_full_cpu_info(void);
 #endif
