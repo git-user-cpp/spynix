@@ -10,12 +10,11 @@
 
 #ifndef HLP_INFO_H_SENTRY
 #define HLP_INFO_H_SENTRY
-    #include <stdio.h>
+        #include <stdio.h>
 
-    void print_banner(void);
-    void print_logo(void);
-    void print_err_info(void);
-    void print_hlp_info(void);
-    void print_ver_info(void);
+        void print_banner(void);
+        void print_logo(void);
+        void print_err_info(void);
+        void print_hlp_info(void);
+        void print_ver_info(void);
 #endif
-

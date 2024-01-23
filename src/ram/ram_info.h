@@ -10,8 +10,8 @@
 
 #ifndef RAM_INFO_H_SENTRY
 #define RAM_INFO_H_SENTRY
-    #include <stdio.h>
-    #include <sys/sysinfo.h>
+        #include <stdio.h>
+        #include <sys/sysinfo.h>
 
-    void print_ram_info(void);
+        void print_ram_info(void);
 #endif
