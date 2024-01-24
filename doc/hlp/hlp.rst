@@ -38,10 +38,10 @@ Prints an error message instructing the user to use the help option for valid co
 
 Prints a comprehensive help menu, including:
 
-  - Description of the Spynix tool
-  - Information options (help, version, banner, logo)
-  - Available hardware information options (all, system, cpu, ram, rom, net)
-  - Advanced options (full CPU information)
+- Description of the Spynix tool
+- Information options (help, version, banner, logo)
+- Available hardware information options (all, system, cpu, ram, rom, net)
+- Advanced options (full CPU information)
 
 -------
 
