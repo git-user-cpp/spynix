@@ -10,6 +10,7 @@ Contributing Code
 -----------------
 
 - By contributing to this project, you share your code under the Apache License Version 2.0, as specified in the LICENSE file.
+- Follow instructions and code style from https://github.com/git-user-cpp/spynix/blob/main/doc/CODE_STYLE.rst
 - Don't forget to add yourself to the AUTHORS file.
 
 Code Review
