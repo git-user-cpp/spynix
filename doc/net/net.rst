@@ -15,20 +15,20 @@ Prints network information for both the specified hostname and the local system.
 
 Steps:
 
-    Hostname Information:
+1. Hostname Information:
 
-    a. Retrieves the hostent structure for the given hostname using gethostbyname.
-    b. Prints the hostname and its associated IP addresses.
+- Retrieves the hostent structure for the given hostname using gethostbyname.
+- Prints the hostname and its associated IP addresses.
 
-    Local Interface Information:
+2. Local Interface Information:
 
-    a. Retrieves the list of network interfaces using getifaddrs.
-    b. Iterates through the list of interfaces:
-        Prints the interface name.
-        For IPv4 interfaces:
-            Prints the IP address.
-            Prints the netmask.
+- Retrieves the list of network interfaces using getifaddrs.
+- Iterates through the list of interfaces:
+- Prints the interface name.
+- For IPv4 interfaces:
+      - Prints the IP address.
+      - Prints the netmask.
 
 Error Handling:
 
- - Exits with an error message if either `gethostbyname` or `getifaddrs` fails.
+- Exits with an error message if either `gethostbyname` or `getifaddrs` fails.
