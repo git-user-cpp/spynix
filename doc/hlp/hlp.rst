@@ -12,7 +12,7 @@ Functions
 
   void print_banner(void)
 
-Prints an ASCII banner with the Spynix name.
+Prints a colorful ASCII banner with the Spynix name.
 
 -------
 
@@ -20,7 +20,7 @@ Prints an ASCII banner with the Spynix name.
 
   void print_logo(void)
 
-Prints an ASCII art logo of the Spynix tool.
+Prints a colorful ASCII art logo of the Spynix tool.
 
 -------
 
@@ -28,7 +28,7 @@ Prints an ASCII art logo of the Spynix tool.
 
   void print_err_info(void)
 
-Prints an error message instructing the user to use the help option for valid commands.
+Prints a colorful error message instructing the user to use the help option for valid commands.
 
 -------
 
@@ -36,7 +36,7 @@ Prints an error message instructing the user to use the help option for valid co
 
   void print_hlp_info(void)
 
-Prints a comprehensive help menu, including:
+Prints a colorful comprehensive help menu, including:
 
 - Description of the Spynix tool
 - Information options (help, version, banner, logo)
@@ -49,4 +49,4 @@ Prints a comprehensive help menu, including:
 
   void print_ver_info(void)
 
-Prints the current version of Spynix along with a link to its GitHub repository.
+Prints the current colorful version of Spynix along with a link to its GitHub repository.
