@@ -26,7 +26,7 @@ rapid unix system & hardware info scraper
 
 ---
 
-![spynix](https://github.com/git-user-cpp/spynix/assets/61907955/5982b092-9622-4cf7-b1e2-109e8e7c2b68)
+![spynix](https://github.com/git-user-cpp/spynix/assets/61907955/a7e8420b-04fc-4ba7-bc31-a2e13afbcb08)
 
 ---
 
