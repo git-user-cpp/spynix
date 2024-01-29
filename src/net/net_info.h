@@ -10,13 +10,5 @@
 
 #ifndef NET_INFO_H_SENTRY
 #define NET_INFO_H_SENTRY
-        #include <ifaddrs.h>
-        #include <stdio.h>
-        #include <stdlib.h>
-        #include <sys/socket.h>
-        #include <netdb.h>
-        #include <arpa/inet.h>
-        #include <stdint.h>
-
         void print_net_info(char *hostname);
 #endif

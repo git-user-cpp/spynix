@@ -8,6 +8,8 @@
  *     http://www.apache.org/licenses/LICENSE-2.0
  */
 
+#include <stdio.h>
+#include <sys/statvfs.h>
 #include "rom_info.h" 
 
 void print_rom_info(void)

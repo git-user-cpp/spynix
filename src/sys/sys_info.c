@@ -8,6 +8,8 @@
  *     http://www.apache.org/licenses/LICENSE-2.0
  */
 
+#include <stdio.h>
+#include <sys/utsname.h>
 #include "sys_info.h"
 
 void print_sys_info(void)

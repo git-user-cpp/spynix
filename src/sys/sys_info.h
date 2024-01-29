@@ -10,9 +10,6 @@
 
 #ifndef SYS_INFO_H_SENTRY
 #define SYS_INFO_H_SENTRY
-        #include <stdio.h>
-        #include <sys/utsname.h>
-
         void print_sys_info(void);
 #endif
 

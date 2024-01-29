@@ -10,8 +10,5 @@
 
 #ifndef ROM_INFO_H_SENTRY
 #define ROM_INFO_H_SENTRY
-        #include <stdio.h>
-        #include <sys/statvfs.h>
-
         void print_rom_info(void);
 #endif

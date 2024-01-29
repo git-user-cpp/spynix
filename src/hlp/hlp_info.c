@@ -8,6 +8,7 @@
  *     http://www.apache.org/licenses/LICENSE-2.0
  */
 
+#include <stdio.h>
 #include "hlp_info.h" 
 
 void print_banner(void)
@@ -94,7 +95,7 @@ hardware.\033[0m\n\n\
 void print_ver_info(void)
 {
         print_banner();
-        printf("spynix v4.1.0\n\nFor more info visit: \
+        printf("spynix v4.1.1\n\nFor more info visit: \
 \033[36mhttps://github.com/git-user-cpp/spynix\033[0m\n");
 }
 
