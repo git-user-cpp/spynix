@@ -8,6 +8,7 @@
  *     http://www.apache.org/licenses/LICENSE-2.0
  */
 
+#include <stdio.h>
 #include <string.h>
 #include "sys/sys_info.h"
 #include "ram/ram_info.h"
