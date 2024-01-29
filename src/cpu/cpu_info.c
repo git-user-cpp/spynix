@@ -8,6 +8,8 @@
  *     http://www.apache.org/licenses/LICENSE-2.0
  */
 
+#include <stdio.h>
+#include <stdint.h>
 #include "cpu_info.h" 
 
 void print_cpu_info(void)

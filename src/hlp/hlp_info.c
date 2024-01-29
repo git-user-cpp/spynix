@@ -8,6 +8,7 @@
  *     http://www.apache.org/licenses/LICENSE-2.0
  */
 
+#include <stdio.h>
 #include "hlp_info.h" 
 
 void print_banner(void)
