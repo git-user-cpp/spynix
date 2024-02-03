@@ -23,7 +23,7 @@
 #include <arpa/inet.h>
 #include "net_info.h" 
 
-void print_net_info(char *hostname)
+void print_net_info(const char *hostname)
 {
         struct hostent *host = gethostbyname(hostname);
         struct ifaddrs *ifaddr, *ifa;

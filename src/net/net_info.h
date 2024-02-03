@@ -16,5 +16,5 @@
 
 #ifndef NET_INFO_H_SENTRY
 #define NET_INFO_H_SENTRY
-        void print_net_info(char *hostname);
+        void print_net_info(const char *hostname);
 #endif
