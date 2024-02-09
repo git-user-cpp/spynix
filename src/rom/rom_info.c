@@ -22,11 +22,11 @@ void print_rom_info(void)
 {
         struct statvfs fs_info;
 
-        printf(" ____________\n");
-        printf("|\n");
-        printf("| ROM Info:\n");
-        printf("|____________\n");
-        printf("|\n");
+        printf(" ____________\n\
+|\n\
+| ROM Info:\n\
+|____________\n\
+|\n");
 
         if (statvfs("/", &fs_info) == 0) {
                 printf("| Total Disk Space: %ld MiB\n",

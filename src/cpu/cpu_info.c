@@ -22,11 +22,11 @@ void print_cpu_info(void)
 {
         FILE *cpu_file;
 
-        printf(" ____________\n");
-        printf("|\n");
-        printf("| CPU Info:\n");
-        printf("|____________\n");
-        printf("|\n");
+        printf(" ____________\n\
+|\n\
+| CPU Info:\n\
+|____________\n\
+|\n");
 
         cpu_file = fopen("/proc/cpuinfo", "r");
         if (cpu_file) {
@@ -50,11 +50,11 @@ void print_full_cpu_info(void)
 {
         FILE *cpu_file;
 
-        printf(" ____________\n");
-        printf("|\n");
-        printf("| Full CPU Info:\n");
-        printf("|____________\n");
-        printf("|\n");
+        printf(" ____________\n\
+|\n\
+| Full CPU Info:\n\
+|____________\n\
+|\n");
 
         cpu_file = fopen("/proc/cpuinfo", "r");
         if (cpu_file) {
