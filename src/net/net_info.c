@@ -30,11 +30,12 @@ void print_net_info(const char *hostname)
         uint8_t i;
 
         if (host == NULL) {
-                perror("gethostbyname");
+                perror("\033[036m|\033[0m \033[031mgethostbyname\033[0m");
+                printf("\033[036m|____________\033[0m\n\n"); 
                 exit(1);
         } else {
-                printf("Host Name: %s\n", host->h_name);
-                printf("IP Address: ");
+                printf("\033[036m|\033[0m Host Name: %s\n", host->h_name);
+                printf("\033[036m|\033[0m IP Address: ");
                 
                 for (i = 0; host->h_addr_list[i] != NULL; ++i) {
                         printf("%s ", inet_ntoa(*(struct in_addr *)host->h_addr_list[i]));
@@ -50,11 +51,13 @@ void print_net_info(const char *hostname)
     
         for (ifa = ifaddr; ifa != NULL; ifa = ifa->ifa_next) {
                 if (ifa->ifa_addr != NULL && ifa->ifa_addr->sa_family == AF_INET) {
-                        printf("Interface: %s\n", ifa->ifa_name);
-                        printf("Address: %s\n", inet_ntoa(((struct sockaddr_in*)ifa->ifa_addr)->sin_addr));
-                        printf("Netmask: %s\n", inet_ntoa(((struct sockaddr_in*)ifa->ifa_netmask)->sin_addr));
+                        printf("\033[036m|\033[0m Interface: %s\n", ifa->ifa_name);
+                        printf("\033[036m|\033[0m Address: %s\n", inet_ntoa(((struct sockaddr_in*)ifa->ifa_addr)->sin_addr));
+                        printf("\033[036m|\033[0m Netmask: %s\n", inet_ntoa(((struct sockaddr_in*)ifa->ifa_netmask)->sin_addr));
                 }
         }
+
+        printf("\033[036m|____________\033[0m\n\n"); 
 
         freeifaddrs(ifaddr);
 }

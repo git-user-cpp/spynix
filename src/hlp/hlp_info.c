@@ -82,26 +82,26 @@ void print_hlp_info(void)
         print_banner();
         printf("\033[36mSpynix is a commandline tool for gathering info about \
 hardware.\033[0m\n\n\
-\t\tInfo:\n\
+\t\t\033[033mInfo:\033[0m\n\
 \t\t\t-h or --help \t\t- show this menu\n\
 \t\t\t-v or --version \t- show version\n\
 \t\t\t-b or --banner \t\t- show ASCII banner\n\
 \t\t\t-l or --logo \t\t- show ASCII logo\n\n");
-        printf("\t\tOptions:\n\
+        printf("\t\t\033[033mOptions:\033[0m\n\
 \t\t\t-a or --all \t- show summary info about system, cpu, ram and rom\n\
 \t\t\t-sys \t\t- show system info\n\
 \t\t\t-cpu \t\t- show short Central Processing Unit info\n\
 \t\t\t-ram \t\t- show Random Access Memory info\n\
 \t\t\t-rom \t\t- show Read Only Memory info\n\
 \t\t\t-net \t\t- show network info\n\n\
-\t\tAdvanced:\n\
+\t\t\033[033mAdvanced:\033[0m\n\
 \t\t-cpu -f or -cpu --full \t- show full Central Processing Unit info\n");
 }
 
 void print_ver_info(void)
 {
         print_banner();
-        printf("spynix v4.1.3\n\nFor more info visit: \
+        printf("spynix v4.2.0\n\nFor more info visit: \
 \033[36mhttps://github.com/git-user-cpp/spynix\033[0m\n");
 }
 

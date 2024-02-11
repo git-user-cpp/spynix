@@ -23,15 +23,15 @@ void print_sys_info(void)
         struct utsname sys_info;
         uname(&sys_info);
 
-        printf(" ____________\n\
+        printf("\033[036m ____________\n\
 |\n\
 | System Info\n\
 |____________\n\
-|\n");
-        printf("| System Name: %s\n", sys_info.sysname);
-        printf("| Host Name: %s\n", sys_info.nodename);
-        printf("| Kernel Release: %s\n", sys_info.release);
-        printf("| System Version: %s\n", sys_info.version);
-        printf("| Machine Type: %s\n", sys_info.machine);
-        printf("|____________\n\n");
+|\033[0m\n");
+        printf("\033[036m|\033[0m System Name: %s\n", sys_info.sysname);
+        printf("\033[036m|\033[0m Host Name: %s\n", sys_info.nodename);
+        printf("\033[036m|\033[0m Kernel Release: %s\n", sys_info.release);
+        printf("\033[036m|\033[0m System Version: %s\n", sys_info.version);
+        printf("\033[036m|\033[0m Machine Type: %s\n", sys_info.machine);
+        printf("\033[036m|____________\033[0m\n\n");
 }

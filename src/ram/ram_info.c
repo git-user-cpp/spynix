@@ -23,15 +23,15 @@ void print_ram_info(void)
         struct sysinfo sys_info;
         sysinfo(&sys_info);
 
-        printf(" ____________\n\
+        printf("\033[036m ____________\n\
 |\n\
 | RAM Info\n\
 |____________\n\
-|\n");
-        printf("| Uptime: %ld Hours\n", sys_info.uptime / 60 / 60);
-        printf("| Total RAM: %ld MiB\n",
+|\033[0m\n");
+        printf("\033[036m|\033[0m Uptime: %ld Hours\n", sys_info.uptime / 60 / 60);
+        printf("\033[036m|\033[0m Total RAM: %ld MiB\n",
                 sys_info.totalram * sys_info.mem_unit / 1024 / 1024);
-        printf("| Free RAM: %ld MiB\n",
+        printf("\033[036m|\033[0m Free RAM: %ld MiB\n",
                 sys_info.freeram * sys_info.mem_unit / 1024 / 1024);
-        printf("|____________\n\n");
+        printf("\033[036m|____________\033[0m\n\n");
 }

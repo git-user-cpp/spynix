@@ -22,20 +22,20 @@ void print_rom_info(void)
 {
         struct statvfs fs_info;
 
-        printf(" ____________\n\
+        printf("\033[036m ____________\n\
 |\n\
 | ROM Info:\n\
 |____________\n\
-|\n");
+|\033[0m\n");
 
         if (statvfs("/", &fs_info) == 0) {
-                printf("| Total Disk Space: %ld MiB\n",
+                printf("\033[036m|\033[0m Total Disk Space: %ld MiB\n",
                        fs_info.f_blocks * fs_info.f_bsize / 1024 / 1024);
-                printf("| Free Disk Space: %ld MiB\n",
+                printf("\033[036m|\033[0m Free Disk Space: %ld MiB\n",
                         fs_info.f_bfree * fs_info.f_bsize / 1024 / 1024);
-                printf("| Used Disk Space: %ld MiB\n",
+                printf("\033[036m|\033[0m Used Disk Space: %ld MiB\n",
                         (fs_info.f_blocks - fs_info.f_bfree) *
                         fs_info.f_bsize / 1024 / 1024);
-                printf("|____________\n\n");
+                printf("\033[036m|____________\033[0m\n\n");
         }
 }
