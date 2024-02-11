@@ -21,39 +21,39 @@
 
 void print_cpu_info(void)
 {
-        printf(" ____________\n\
+        printf("\033[036m ____________\n\
 |\n\
 | CPU Info:\n\
 |____________\n\
-|\n");
+|\033[0m\n");
 
         system("lscpu");
-        printf("|____________\n\n");
+        printf("\033[036m|____________\033[0m\n\n");
 }
 
 void print_full_cpu_info(void)
 {
         FILE *cpu_file;
 
-        printf(" ____________\n\
+        printf("\033[036m ____________\n\
 |\n\
 | Full CPU Info:\n\
 |____________\n\
-|\n");
+|\033[0m\n");
 
         cpu_file = fopen("/proc/cpuinfo", "r");
         if (cpu_file) {
                 char line[128];
 
                 while (fgets(line, sizeof(line), cpu_file)) {
-                        printf("| %s", line);
+                        printf("\033[036m|\033[0m %s", line);
                 }
 
                 fclose(cpu_file);
 
-                printf("|____________\n\n");
+                printf("\033[036m|____________\033[0m\n\n");
         } else {
-                printf("Error opening /proc/cpuinfo\n");
+                printf("\033[031mError opening /proc/cpuinfo\033[0m\n");
         }
 }
 
