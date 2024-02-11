@@ -101,7 +101,7 @@ hardware.\033[0m\n\n\
 void print_ver_info(void)
 {
         print_banner();
-        printf("spynix v4.1.3\n\nFor more info visit: \
+        printf("spynix v4.2.0\n\nFor more info visit: \
 \033[36mhttps://github.com/git-user-cpp/spynix\033[0m\n");
 }
 
