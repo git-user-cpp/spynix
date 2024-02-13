@@ -9,7 +9,7 @@ This module contains functions for printing CPU information.
 
    void print_cpu_info(void)
 
-Prints a formatted summary of the first 19 lines of CPU information from the /proc/cpuinfo file.
+Prints a formatted CPU information using lscpu util.
 
 .. code-block:: c
 
@@ -29,5 +29,5 @@ Common Steps:
 
 Differences:
 
-- print_cpu_info prints only the first 19 lines of the file.
+- print_cpu_info prints general CPU info.
 - print_full_cpu_info prints the entire contents of the file.
