@@ -30,4 +30,4 @@ Common Steps:
 Differences:
 
 - print_cpu_info prints general CPU info.
-- print_full_cpu_info prints the entire contents of the file.
+- print_full_cpu_info prints the entire contents of the /proc/cpuinfo file.
